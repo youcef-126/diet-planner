@@ -1,6 +1,22 @@
 # Diet Planner
 
-This repository contains planning notes for a simple web application that helps determine daily calorie and macronutrient needs.
+A minimal Streamlit application that calculates daily calorie and macronutrient
+targets and stores them in Supabase.
 
-See [PLAN.md](./PLAN.md) for the full overview of the proposed MVP using Streamlit and Supabase.
+## Setup
 
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Provide Supabase credentials via environment variables:
+   ```bash
+   export SUPABASE_URL=YOUR_SUPABASE_URL
+   export SUPABASE_KEY=YOUR_SERVICE_ROLE_KEY
+   ```
+3. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
+
+See [PLAN.md](./PLAN.md) for the design overview.
